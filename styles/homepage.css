@@ -34,3 +34,9 @@
 .about-container h2 {
     font-size: 25px;
 }
+
+@media only screen and (max-width: 700) {
+    .hero-container h1 {
+        color: white;
+    }
+}
