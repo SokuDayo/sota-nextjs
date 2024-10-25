@@ -1,0 +1,9 @@
+.cat-img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.swiper {
+    padding: 0 15% !important;
+ }

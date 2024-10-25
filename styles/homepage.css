@@ -1,0 +1,36 @@
+/* hero section */
+.hero-container {
+    background-image: url('../public/stars.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+}
+
+.hero-container h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 70px;
+    color: white;
+}
+
+.hero-container p {
+    font-size: 20px;
+}
+
+/* about me section */
+.about-container {
+    text-align: center;
+    padding: 30px;
+    background: black;
+    color: white;
+}
+
+.about-container h2 {
+    font-size: 25px;
+}
