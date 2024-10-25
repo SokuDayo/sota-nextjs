@@ -28,13 +28,13 @@ export default function carousel() {
       centeredSlides={true}
       modules={[Pagination, Navigation]}
     >
-      <SwiperSlide><div className='cat-img'><Image alt='ellie' src='/IMG_0014.jpg' loading="eager" fill={true}></Image></div></SwiperSlide>
-      <SwiperSlide><div className='cat-img'><Image alt='ellie' src='/IMG_0149.jpg' loading="eager" fill={true}></Image></div></SwiperSlide>
-      <SwiperSlide><div className='cat-img'><Image alt='ellie' src='/IMG_0223.jpg' loading="eager" fill={true}></Image></div></SwiperSlide>
-      <SwiperSlide><div className='cat-img'><Image alt='ellie' src='/IMG_0332.jpg' loading="eager" fill={true}></Image></div></SwiperSlide>
-      <SwiperSlide><div className='cat-img'><Image alt='ellie' src='/IMG_1381.jpg' loading="eager" fill={true}></Image></div></SwiperSlide>
-      <SwiperSlide><div className='cat-img'><Image alt='ellie' src='/IMG_3304.jpg' loading="eager" fill={true}></Image></div></SwiperSlide>
-      <SwiperSlide><div className='cat-img'><Image alt='ellie' src='/20210106_140703.jpg' loading="eager" fill={true}></Image></div></SwiperSlide>
+      <SwiperSlide><img className='cat-img' alt='ellie' src='/IMG_0014.jpg' loading="eager" ></img></SwiperSlide>
+      <SwiperSlide><img className='cat-img' alt='ellie' src='/IMG_0149.jpg' loading="eager" ></img></SwiperSlide>
+      <SwiperSlide><img className='cat-img' alt='ellie' src='/IMG_0223.jpg' loading="eager" ></img></SwiperSlide>
+      <SwiperSlide><img className='cat-img' alt='ellie' src='/IMG_0332.jpg' loading="eager" ></img></SwiperSlide>
+      <SwiperSlide><img className='cat-img' alt='ellie' src='/IMG_1381.jpg' loading="eager" ></img></SwiperSlide>
+      <SwiperSlide><img className='cat-img' alt='ellie' src='/IMG_3304.jpg' loading="eager" ></img></SwiperSlide>
+      <SwiperSlide><img className='cat-img' alt='ellie' src='/20210106_140703.jpg' loading="eager" ></img></SwiperSlide>
     </Swiper>
   );
 }
