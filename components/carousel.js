@@ -2,16 +2,17 @@
 
 import '../styles/carousel.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Navigation } from 'swiper/modules';
+import { Pagination, Navigation, Autoplay} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import Image from 'next/image';
 
-export default function carousel() {
+export default function Carousel() {
   return (
     <Swiper
       spaceBetween={50}
       slidesPerView={1}
+      grabCursor={true}
       breakpoints={{
         700: {
           slidesPerView: 1,
@@ -24,17 +25,30 @@ export default function carousel() {
         }
       }}
       loop={true}
-      lazyPreloadPrevNext={true}
       centeredSlides={true}
-      modules={[Pagination, Navigation]}
+      modules={[Pagination, Navigation, Autoplay]}
     >
-      <SwiperSlide><img className='cat-img' alt='ellie' src='/IMG_0014.jpg' loading="eager" ></img></SwiperSlide>
-      <SwiperSlide><img className='cat-img' alt='ellie' src='/IMG_0149.jpg' loading="eager" ></img></SwiperSlide>
-      <SwiperSlide><img className='cat-img' alt='ellie' src='/IMG_0223.jpg' loading="eager" ></img></SwiperSlide>
-      <SwiperSlide><img className='cat-img' alt='ellie' src='/IMG_0332.jpg' loading="eager" ></img></SwiperSlide>
-      <SwiperSlide><img className='cat-img' alt='ellie' src='/IMG_1381.jpg' loading="eager" ></img></SwiperSlide>
-      <SwiperSlide><img className='cat-img' alt='ellie' src='/IMG_3304.jpg' loading="eager" ></img></SwiperSlide>
-      <SwiperSlide><img className='cat-img' alt='ellie' src='/20210106_140703.jpg' loading="eager" ></img></SwiperSlide>
+      <SwiperSlide>
+        <Image className='cat-img' alt='ellie' src='/IMG_0014.jpg' width={600} height={400} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Image className='cat-img' alt='ellie' src='/IMG_0149.jpg' width={600} height={400} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Image className='cat-img' alt='ellie' src='/IMG_0223.jpg' width={600} height={400} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Image className='cat-img' alt='ellie' src='/IMG_0332.jpg' width={600} height={400} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Image className='cat-img' alt='ellie' src='/IMG_1381.jpg' width={600} height={400} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Image className='cat-img' alt='ellie' src='/IMG_3304.jpg' width={600} height={400} />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Image className='cat-img' alt='ellie' src='/20210106_140703.jpg' width={600} height={400} />
+      </SwiperSlide>
     </Swiper>
   );
 }

@@ -1,0 +1,55 @@
+.case-hero-container {
+  background-image: url("../public/stars.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin-top: 60px;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+}
+
+.case-hero-container h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+
+.case-hero-container p {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.case-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 25px;
+}
+
+.case-modules {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.case-module {
+  padding: 1rem;
+  border-radius: 20px;
+  background: rgb(0 11 53);
+}
+
+.case-title {
+  font-size: 30px;
+  text-align: center;
+}
+
+.case-module img {
+  width: 400px;
+  height: 230px;
+}
