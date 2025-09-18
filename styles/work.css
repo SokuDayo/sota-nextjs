@@ -22,6 +22,8 @@
   font-size: 20px;
   color: white;
   text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .case-container {
@@ -38,10 +40,19 @@
   gap: 2rem;
 }
 
+.case-modules .overlay {
+  position: absolute;
+}
+
 .case-module {
   padding: 1rem;
   border-radius: 20px;
   background: rgb(0 11 53);
+  cursor: pointer;
+}
+
+.case-module:hover {
+  box-shadow: 0px 0px 20px blue;
 }
 
 .case-title {
@@ -49,7 +60,75 @@
   text-align: center;
 }
 
-.case-module img {
+.case-image {
   width: 400px;
   height: 230px;
+}
+
+@media (max-width: 945px) {
+  .case-image {
+    height: auto;
+  }
+}
+
+/*overlay*/
+.overlay-container {
+  max-width: 500px;
+  width: 100%;
+}
+
+.overlay-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.overlay-title {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.overlay-tag {
+  padding: 5px 10px;
+  width: fit-content;
+  text-align: center;
+  background: rgb(59 130 246 / 0.5);
+  color: white;
+  font-size: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  align-self: flex-start;
+}
+
+.overlay-text {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.stat-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.stat-object {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-stat {
+  font-size: 40px;
+  color: #b5b500;
+}
+
+.stat-desc {
+  text-align: center;
 }

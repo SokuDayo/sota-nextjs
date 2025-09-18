@@ -1,17 +1,83 @@
 .main-nav {
-    position: fixed;
-    top: 0;
-    z-index: 5;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    width: 100%;
-    background-color: black;
-    padding: 15px;
-    color: white;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  background-color: black;
+  padding: 15px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 470px) {
+  .main-nav {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: 100vw;
+    overflow-x: scroll;
   }
-  
-  .main-nav a {
-    font-size: 20px;
-    margin: 0 2vw;
-  }
+}
+
+.nav-item {
+  font-size: 20px;
+  margin: 0 2vw;
+}
+
+.overlay {
+  position: absolute;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+.email-overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email-overlay-title {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.email-overlay-text {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#email-link {
+  color: #ff8f75;
+  display: inline-flex;
+  gap: 20px;
+}
+
+#email-link:hover {
+  text-decoration: underline;
+}
+
+.email-button {
+  padding: 15px;
+  color: black;
+  background: #90c6ff;
+  font-size: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.email-button:hover {
+  background: #5798dd;
+}
+
+#copyText {
+  display: block;
+}
+
+#copyText.hidden {
+  display: none;
+}

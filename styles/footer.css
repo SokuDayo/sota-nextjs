@@ -11,3 +11,7 @@
   margin: 10px;
   color: white;
 }
+
+.footer-img:hover {
+  scale: 1.2;
+}
