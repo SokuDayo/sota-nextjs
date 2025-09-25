@@ -73,12 +73,12 @@ async function copyTextToClipboard(text) {
 }
 
 function emailLink() {
-  var email = document.getElementById("email-link").innerHTML;
+  var email = "sota.iwaku@gmail.com";
   copyTextToClipboard(email);
+
   var copyText = document.getElementById("copyText");
-  console.log(copyText);
   copyText.classList.remove("hidden");
   setTimeout(() => {
-      copyText.classList.add("hidden");
+    copyText.classList.add("hidden");
   }, 1000);
 }
