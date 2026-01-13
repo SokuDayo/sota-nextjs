@@ -62,6 +62,7 @@ body {
 .case-title {
   font-size: 30px;
   text-align: center;
+  color: white;
 }
 
 .case-image {
@@ -79,6 +80,10 @@ body {
 .overlay-container {
   max-width: 500px;
   width: 100%;
+}
+
+.overlay_close:after {
+  color: white;
 }
 
 .overlay-content {
