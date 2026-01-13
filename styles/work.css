@@ -1,3 +1,7 @@
+body {
+  background: #0a0a0a;
+}
+
 .case-hero-container {
   background-image: url("../public/stars.jpg");
   background-repeat: no-repeat;
