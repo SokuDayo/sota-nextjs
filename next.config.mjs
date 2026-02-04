@@ -1,6 +1,7 @@
 const nextConfig = {
-  /* config options here */
-  devIndicators: false, // This is the options that hide/remove the icon
+  devIndicators: {
+    buildActivityPosition: 'top-right', // Or 'bottom-left', 'top-left', 'bottom-right'
+  },
 };
 
 export default nextConfig;
